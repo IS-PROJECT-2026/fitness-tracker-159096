@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPulse | Minimalist Fitness Tracker</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="container">
+            <h1>FitPulse Tracker</h1>
+            <p>Log workouts, track metrics, and reach your goals.</p>
+        </div>
+    </header>
+
+    <main class="container grid-container">
+        <!-- Dashboard Summary Stats -->
+        <section class="stats-section">
+            <div class="stat-card">
+                <h3>Total Workouts</h3>
+                <p id="total-workouts">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Duration</h3>
+                <p><span id="total-duration">0</span> mins</p>
+            </div>
+            <div class="stat-card">
+                <h3>Est. Calories Burned</h3>
+                <p><span id="total-calories">0</span> kcal</p>
+            </div>
+        </section>
+
+        <!-- Workout Input Form -->
+        <section class="form-section">
+            <h2>Log New Activity</h2>
+            <form id="workout-form">
+                <div class="form-group">
+                    <label for="exercise-name">Exercise / Activity</label>
+                    <input type="text" id="exercise-name" placeholder="e.g. Running, Bench Press" required>
+                </div>
+                <div class="form-group">
+                    <label for="exercise-category">Category</label>
+                    <select id="exercise-category" required>
+                        <option value="Cardio">Cardio</option>
+                        <option value="Strength">Strength</option>
+                        <option value="Flexibility">Flexibility</option>
+                        <option value="HIIT">HIIT</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="duration">Duration (mins)</label>
+                        <input type="number" id="duration" min="1" placeholder="30" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="calories">Calories Burned</label>
+                        <input type="number" id="calories" min="0" placeholder="250" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Add Workout</button>
+            </form>
+        </section>
+
+        <!-- Activity History Table -->
+        <section class="history-section">
+            <div class="section-header">
+                <h2>Activity Log</h2>
+                <button id="clear-btn" class="btn-danger">Clear History</button>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>Category</th>
+                            <th>Duration</th>
+                            <th>Calories</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="workout-list">
+                        <!-- Dynamic items will render here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+// COMPETING BRANCH VERSION: FitPulse App Logic
 document.addEventListener('DOMContentLoaded', () => {
     const workoutForm = document.getElementById('workout-form');
     const workoutList = document.getElementById('workout-list');

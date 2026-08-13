@@ -165,3 +165,5 @@ th {
     border: none;
     font-size: 1rem;
 }
+/* Conflict 2 Test Modification */
+body { background-color: #f8fafc; }

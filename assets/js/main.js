@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// COMPETING BRANCH VERSION: FitPulse App Logic
-=======
-// MAIN BRANCH VERSION: Fitness Tracker Initialization
->>>>>>> origin/main
 document.addEventListener('DOMContentLoaded', () => {
     const workoutForm = document.getElementById('workout-form');
     const workoutList = document.getElementById('workout-list');

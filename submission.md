@@ -67,21 +67,24 @@ Demonstrate your workflow mechanics by embedding your screenshots below.
 ### B. Project Board
 *Provide a screenshot of your GitHub Project Board with your issues organized dynamically across columns (To Do, In Progress, Done).*
 
-[PASTE YOUR PROJECT BOARD SCREENSHOT DIRECTLY HERE]
+<img width="863" height="959" alt="Kanban" src="https://github.com/user-attachments/assets/44443150-7daf-4f6a-8199-3fe13d896c4d" />
+
 
 * **Caption:** Automated GitHub Kanban Project Board showing all issues (#1 through #6) moved to the Done column.
 
 ### C. Branching Architecture
 *Provide a screenshot showing your local or remote Git branch list, highlighting your use of conventional, issue-linked naming patterns (e.g., `feat/`, `fix/`, `style/`).*
 
-[PASTE YOUR BRANCHING SCREENSHOT DIRECTLY HERE]
+<img width="1000" height="633" alt="Branching Architecture" src="https://github.com/user-attachments/assets/a6026daf-d7e9-49a3-b5a1-1d197160c35f" />
+
 
 * **Caption:** Git branch list displaying structured naming conventions (`feat/`, `fix/`, `chore/`) mapped to tracking issues.
 
 ### D. Pull Requests & Traceability
 *Provide a screenshot of a completed or open Pull Request (PR) on GitHub that clearly shows it is linked to a related development issue.*
 
-[PASTE YOUR PULL REQUEST SCREENSHOT DIRECTLY HERE]
+<img width="1292" height="839" alt="PR" src="https://github.com/user-attachments/assets/1ba117b3-bac0-4cf2-bd78-aa898668e8fb" />
+
 
 * **Caption:** Merged Pull Request #21 showing issue traceability using closing keyword `Closes #6`.
 
@@ -102,21 +105,24 @@ You must engineer **three merge conflicts**, each triggered by a **different cau
 #### Step 1: Generating the Clash
 *Screenshot showing the merge attempt and the conflict warning.*
 
-[PASTE SCREENSHOT OF ATTEMPTED MERGE / TERMINAL WARNING HERE]
+<img width="1241" height="130" alt="Conflict 1 evidence2" src="https://github.com/user-attachments/assets/f8c51812-d36d-4bab-9674-611de361089d" />
+
 
 * **Caption:** Terminal error showing Git merge collision between competing feature branches modifying the exact same line in `index.html`.
 
 #### Step 2: Inside the Code Editor (Conflict Markers)
 *Screenshot showing the raw, unresolved conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>>`) in your editor.*
 
-[PASTE SCREENSHOT OF RAW CONFLICT MARKERS HERE]
+<img width="1241" height="522" alt="Conflict 1" src="https://github.com/user-attachments/assets/59e17135-131f-4f82-8a5d-cb8cc387cebd" />
+
 
 * **Caption:** Visual Studio Code editor displaying raw conflict markers on the application header element.
 
 #### Step 3: Resolution & Clean Merge
 *Screenshot of your clean Git history or completed PR showing the conflict was resolved and merged.*
 
-[PASTE SCREENSHOT OF CLEAN RESOLUTION HERE]
+<img width="1241" height="433" alt="Resolved conflict 1" src="https://github.com/user-attachments/assets/66f1223a-c928-4a15-9e01-419c6853ebe3" />
+
 
 * **Caption:** Closed Pull Requests list and clean Git commit log demonstrating PR #13 merged cleanly into `main`.
 
@@ -128,7 +134,8 @@ You must engineer **three merge conflicts**, each triggered by a **different cau
 
 **Why does this cause trigger a conflict?** This conflict occurs when one branch deletes a target file (`assets/css/style.css`) while a concurrent branch adds new style rule modifications to the exact same file. Git cannot automatically decide whether to prioritize the deletion or retain the incoming code changes.
 
-[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 2 HERE]
+<img width="1181" height="94" alt="Conflict 2" src="https://github.com/user-attachments/assets/6b7ffe4d-f778-43a5-a636-bbb0550619c3" />
+
 
 * **Caption:** Terminal output showing the `CONFLICT (modify/delete)` error state when attempting to merge `origin/main` into the CSS modification branch.
 
@@ -140,6 +147,7 @@ You must engineer **three merge conflicts**, each triggered by a **different cau
 
 **Why does this cause trigger a conflict?** This conflict is triggered when two branches modify the same initialization logic at the top of `assets/js/main.js` independently. Because the diffs overlap on identical line offsets, Git flags a collision and inserts conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>> origin/main`) requiring manual reconciliation.
 
-[PASTE SCREENSHOT OF CONFLICT MARKERS FOR CONFLICT 3 HERE]
+<img width="1264" height="111" alt="Conflict 3" src="https://github.com/user-attachments/assets/b35958eb-ee6b-4af1-9027-6b4a9681a08d" />
+
 
 * **Caption:** VS Code editor displaying active conflict markers on line 1 of `assets/js/main.js` prior to cleanup and PR #21 merge.

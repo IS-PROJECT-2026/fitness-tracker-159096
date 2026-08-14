@@ -122,6 +122,7 @@ You must engineer **three merge conflicts**, each triggered by a **different cau
 *Screenshot of your clean Git history or completed PR showing the conflict was resolved and merged.*
 
 <img width="1241" height="433" alt="Resolved conflict 1" src="https://github.com/user-attachments/assets/66f1223a-c928-4a15-9e01-419c6853ebe3" />
+<img width="1292" height="866" alt="PR 13" src="https://github.com/user-attachments/assets/96beb012-8cdb-4989-b755-aa0ba15aba0e" />
 
 
 * **Caption:** Closed Pull Requests list and clean Git commit log demonstrating PR #13 merged cleanly into `main`.

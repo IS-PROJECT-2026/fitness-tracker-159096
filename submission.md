@@ -59,7 +59,8 @@ Demonstrate your workflow mechanics by embedding your screenshots below.
 ### A. Milestones and Issues
 *Provide a screenshot showing your active milestone(s) and the granular tracking issues linked directly to them.*
 
-[PASTE YOUR MILESTONE SCREENSHOT DIRECTLY HERE]
+<img width="1316" height="318" alt="Milestones" src="https://github.com/user-attachments/assets/f80bc834-c0f3-46b1-b832-577b780a1e5d" />
+
 
 * **Caption:** GitHub Milestones dashboard displaying granular project tracking issues linked across project milestones.
 

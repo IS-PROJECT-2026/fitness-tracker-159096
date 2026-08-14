@@ -1,17 +1,17 @@
-# 🏋️‍♂️ FitPulse — Fitness Tracker Dashboard
+# FitPulse — Fitness Tracker Dashboard
 
 A modern, responsive, and lightweight client-side fitness tracking dashboard designed to help users log workouts, track exercise duration, calculate burned calories, and persist fitness activities.
 
 ---
 
-## 🚀 Live Deployment
+## Live Deployment
 
 - **Live Application:** [https://is-project-2026.github.io/fitness-tracker-159096/](https://is-project-2026.github.io/fitness-tracker-159096/)
 - **Repository:** [https://github.com/IS-PROJECT-2026/fitness-tracker-159096](https://github.com/IS-PROJECT-2026/fitness-tracker-159096)
 
 ---
 
-## 📖 System Overview
+## System Overview
 
 FitPulse is built as a single-page web application featuring dynamic activity logging and real-time dashboard analytics.
 
@@ -23,7 +23,7 @@ FitPulse is built as a single-page web application featuring dynamic activity lo
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Frontend Structure:** HTML5 (Semantic elements)
 * **Styling & Layout:** CSS3 (Modern Flexbox, CSS Grid, Custom Variables)
@@ -33,7 +33,7 @@ FitPulse is built as a single-page web application featuring dynamic activity lo
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 ├── index.html              # Main dashboard layout

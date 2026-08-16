@@ -1,4 +1,3 @@
-// COMPETING BRANCH VERSION: FitPulse App Logic
 document.addEventListener('DOMContentLoaded', () => {
     const workoutForm = document.getElementById('workout-form');
     const workoutList = document.getElementById('workout-list');
@@ -21,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let totalCalories = 0;
 
         if (workouts.length === 0) {
-            workoutList.innerHTML = `<tr><td colspan="6" style="text-align:center; color: #64748b;">No workouts recorded yet.</td></tr>`;
+            workoutList.innerHTML = `<tr><td colspan="5" style="text-align:center; color: #64748b;">No workouts recorded yet.</td></tr>`;
         } else {
-            workouts.forEach((item, index) => {
+            workouts.forEach((item) => {
                 totalDuration += Number(item.duration);
                 totalCalories += Number(item.calories);
 
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td>${item.duration} mins</td>
                     <td>${item.calories} kcal</td>
                     <td>${item.date}</td>
-                    <td><button class="delete-item" data-index="${index}">&times;</button></td>
                 `;
                 workoutList.appendChild(tr);
             });
@@ -69,15 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderUI();
 
         workoutForm.reset();
-    });
-
-    workoutList.addEventListener('click', (e) => {
-        if (e.target.classList.contains('delete-item')) {
-            const index = e.target.getAttribute('data-index');
-            workouts.splice(index, 1);
-            updateLocalStorage();
-            renderUI();
-        }
     });
 
     clearBtn.addEventListener('click', () => {
